@@ -110,7 +110,7 @@ nav ul a button:hover {
 }
 
 #navbar form button {
-  background: var(--color-tertiary2)
+  background: var(--color-tertiary2);
   color: var(--color-primary);
   border: none;
 }
