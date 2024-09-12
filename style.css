@@ -131,6 +131,12 @@ nav ul a button:hover {
   background: var(--gradient-secondary) !important;
 }
 
+
+.btn-secondary {
+  background: var(--color-tertiary) !important;
+  border-o: var(--color-tertiary) !important;
+}
+
 .link {
   padding: 8px;
   border-radius: 5px;
