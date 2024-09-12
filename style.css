@@ -210,6 +210,16 @@ h2 {
   transition: 0.2s;
 }
 
+.home .content h6 {
+  background-image: var(--gradient-secondary3) !important;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  font-weight: 600 !important;
+  font-size: 20px;
+}
+
 .home .content .main-wrapper {
   align-items: center;
   width: 90%;
