@@ -7,7 +7,7 @@
   --color-tertiary: #000080;
   --color-tertiary2: #01c660;
   --color-tertiary3: #0080ff;
-  --color-tertiary4: #026431 ;
+  --color-tertiary4: #026431;
 
   /* GRADIENTS */
   --gradient-primary: linear-gradient(to right, #000000, #0080ff);
@@ -86,18 +86,24 @@
   margin-left: 20px;
 }
 
-.nav-item .nav-link {
+.nav-item a {
   font-size: 16px;
-  font-weight: 550;
+  font-weight: 700;
   color: var(--color-primary);
   letter-spacing: 1px;
   border-radius: 3px;
-  transition: 0.5s ease-in-out;
+  transition: 0.1s ease-in;
+
+  border-bottom: 4px solid transparent;
 }
 
-.nav-item .nav-link:hover {
-  background: var(--color-tertiary2)
-  color: var(--color-primary);
+.nav-item a:hover {
+  color: var(--color-tertiary2);
+  border-width: 10%;
+  border-bottom: 4px solid var(--color-tertiary2);
+}
+
+.nav-item .nav-link:active {
 }
 
 nav ul a button {
@@ -130,7 +136,6 @@ nav ul a button:hover {
 .btn-prmary2:hover {
   background: var(--gradient-secondary) !important;
 }
-
 
 .btn-secondary {
   background: var(--color-tertiary) !important;
@@ -606,12 +611,12 @@ form {
   align-items: center;
   margin-top: 30px;
   letter-spacing: 1px;
-  color: var(--color-tertiary4)!important;
+  color: var(--color-tertiary4) !important;
 }
 
 .about p {
   font-size: 500;
-  color: var(--color-primary2)!important;
+  color: var(--color-primary2) !important;
   align-items: center;
   text-align: center;
   margin-bottom: auto;
@@ -621,6 +626,16 @@ form {
 @media (max-width: 750px) {
   .about {
     padding: 0;
+  }
+
+  /* .user .fa-solid {
+    display: none;
+  } */
+}
+
+@media (max-width: 920) {
+  .navbar .user .fa-user {
+    display: none !important;
   }
 }
 
@@ -732,8 +747,11 @@ form {
 .vendors .card button:hover {
   background-color: var(--color-tertiary);
   color: var(--color-primary);
-  padding: 7px;
   font-weight: 500;
+}
+
+.vendors .card button:active {
+  padding: 7px;
 }
 
 /* FOOTER */
@@ -813,7 +831,7 @@ footer p {
 }
 
 .subscribe form label {
-  color: var(--color-tertiary4)!important;
+  color: var(--color-tertiary4) !important;
 }
 
 .subscribe .form-control {
