@@ -44,17 +44,18 @@ $result = pg_query($conn, $sql);
 //if ($conn->query($sql) === TRUE)
 if ($result) {
     // Send email notification
-    $to = $email;
-    $subject = "Booking Confirmation";
-    $message = "Thank you for your booking, $full_name!\n\nYour booking was successful.";
-    $headers = "From: goodluckiyem@gmail.com";
+    //$to = $email;
+    //$subject = "Booking Confirmation";
+    //$message = "Thank you for your booking, $full_name!\n\nYour booking was successful.";
+    //$headers = "From: goodluckiyem@gmail.com";
+    header("Location: confirmed_book.html");
 
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Booking successful! A confirmation email has been sent.";
-        header("Location: confirmed_book.html");
-    } else {
-        echo "Booking successful, but there was an error sending the email.";
-    }
+    //if (mail($to, $subject, $message, $headers)) {
+        //echo "Booking successful! A confirmation email has been sent.";
+        //header("Location: confirmed_book.html");
+    //} else {
+        //echo "Booking successful, but there was an error sending the email.";
+    //}
 } else {
     echo "Error: " . pg_last_error($conn);
 //$sql . "<br>" . $conn->error;
