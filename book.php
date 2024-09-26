@@ -1,21 +1,21 @@
 <?php
 //user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres
  Database connection details
-$servername = "aws-0-eu-central-1.pooler.supabase.com";
-$username = "postgres.kdrbheygnrkgjnpnkwji";
-$port + "6543";
-$password = "hwbA_t959WPe_Ud";
-$dbname = "postgres";
-$conn_string = "user=postgres.kdrbheygnrkgjnpnkwji password=[YOUR-PASSWORD] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres";
+//$servername = "aws-0-eu-central-1.pooler.supabase.com";
+//$username = "postgres.kdrbheygnrkgjnpnkwji";
+//$port + "6543";
+//$password = "hwbA_t959WPe_Ud";
+//$dbname = "postgres";
+//$conn_string = "user=postgres.kdrbheygnrkgjnpnkwji password=[YOUR-PASSWORD] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres";
 
 // Create connection
 //$conn = new mysqli($servername, $username, $port, $password, $dbname);
 //$conn = new mysqli(user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres);
-$conn = pg_connect($conn_string);
+//$conn = pg_connect($conn_string);
 
 // Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+//if ($conn->connect_error) {
+    //die("Connection failed: " . $conn->connect_error);
 
 }
 
@@ -24,6 +24,16 @@ $full_name = $_POST['full_name'];
 $phone = $_POST['phone'];
 $email = $_POST['email'];
 $address = $_POST['address'];
+
+// Supabase connection details (replace with your actual connection string)
+$conn_string = "YOUR_SUPABASE_CONNECTION_STRING";
+
+// Create connection
+$conn = pg_connect($conn_string);
+
+// Check connection
+if (!$conn) {
+    die("Connection failed: " . pg_last_error());
 
 // Insert data into the database
 $sql = "INSERT INTO bookings (full_name, phone, email, address)
