@@ -26,7 +26,7 @@ $email = $_POST['email'];
 $address = $_POST['address'];
 
 // Supabase connection details (replace with your actual connection string)
-$conn_string = "user=postgres.kdrbheygnrkgjnpnkwji password=hwbA_t959WPe_Ud host=aws-0-eu-central-1.pooler.supabase.com port=5432 dbname=postgres";
+$conn_string = "user=postgres password=hwbA_t959WPe_Ud host=db.kdrbheygnrkgjnpnkwji.supabase.co port=5432 dbname=postgres";
 
 // Create connection
 $conn = pg_connect($conn_string);
