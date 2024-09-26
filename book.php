@@ -1,5 +1,5 @@
 <?php
-user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres
+//user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres
  Database connection details
 $servername = "aws-0-eu-central-1.pooler.supabase.com";
 $username = "postgres.kdrbheygnrkgjnpnkwji";
