@@ -6,10 +6,12 @@ $username = "postgres.kdrbheygnrkgjnpnkwji";
 $port + "6543";
 $password = "hwbA_t959WPe_Ud";
 $dbname = "postgres";
+$conn_string = "user=postgres.kdrbheygnrkgjnpnkwji password=[YOUR-PASSWORD] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres";
 
 // Create connection
 //$conn = new mysqli($servername, $username, $port, $password, $dbname);
-$conn = new mysqli(user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres);
+//$conn = new mysqli(user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres);
+$conn = pg_connect($conn_string);
 
 // Check connection
 if ($conn->connect_error) {
@@ -26,6 +28,8 @@ $address = $_POST['address'];
 // Insert data into the database
 $sql = "INSERT INTO bookings (full_name, phone, email, address)
         VALUES ('$full_name', '$phone', '$email', '$address')";
+
+$result = pg_query($conn, $sql);
 
 if ($conn->query($sql) === TRUE) {
     // Send email notification
