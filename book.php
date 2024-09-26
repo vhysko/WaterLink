@@ -41,7 +41,8 @@ $sql = "INSERT INTO bookings (full_name, phone, email, address)
 
 $result = pg_query($conn, $sql);
 
-if ($conn->query($sql) === TRUE) {
+//if ($conn->query($sql) === TRUE)
+if ($result) {
     // Send email notification
     $to = $email;
     $subject = "Booking Confirmation";
@@ -55,8 +56,10 @@ if ($conn->query($sql) === TRUE) {
         echo "Booking successful, but there was an error sending the email.";
     }
 } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
+    echo "Error: " . pg_last_error($conn);
+//$sql . "<br>" . $conn->error;
 }
 
-$conn->close();
+//$conn->close();
+ pg_close($conn);
 ?>
