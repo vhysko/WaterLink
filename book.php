@@ -8,7 +8,8 @@ $password = "hwbA_t959WPe_Ud";
 $dbname = "postgres";
 
 // Create connection
-$conn = new mysqli($servername, $username, $port, $password, $dbname);
+//$conn = new mysqli($servername, $username, $port, $password, $dbname);
+$conn = new mysqli(user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres);
 
 // Check connection
 if ($conn->connect_error) {
