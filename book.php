@@ -1,13 +1,14 @@
 <?php
 user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres
-// Database connection details
-//$servername = "mysql6013.site4now.net";
-//$username = "db_aad944_waterlk";
-//$password = "TheRealEkanem16@";
-//$dbname = "waterlk";
+ Database connection details
+$servername = "aws-0-eu-central-1.pooler.supabase.com";
+$username = "postgres.kdrbheygnrkgjnpnkwji";
+$port + "6543";
+$password = "hwbA_t959WPe_Ud";
+$dbname = "postgres";
 
 // Create connection
-//$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $port, $password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
