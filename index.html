@@ -522,52 +522,29 @@
               </div>
       
               <div class="card">
-      
-                
-               
-      
-      
-               
-                <form class="row g-3" #="signup">
-                
+              <form action="" method="post" class="row g-3" #="signup" id="booking-form">
                   <div class="mb-3">
-                    <label for="formGroupExampleInput" class="form-label"
-                      >Full Name</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="formGroupExampleInput"
-                      placeholder="Vhysko Ekanem"
-                      required
-                    />
-                  </div>
-                  <div class="mb-3 form-box">
-                    <label for="formGroupExampleInput2" class="form-label"
-                      >Email</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control"
-                      id="formGroupExampleInput2"
-                      placeholder="vhysko@gmail.com "
-                      required
-                    />
-                  </div>
-      
-                  </form>
-                  
-                  
-                  <div class="col-12">
-                    <button class="btn btn-primary" type="submit">
-                      Subscribe
-                    </button>
+                    <label for="full_name" class="form-label">Full Name:</label>
+                    <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Vhysko Ekanem" required>
                   </div>
 
-                  <div id="emailHelp" class="form-text-2">
-                    Your information is Private
+                  <div class="mb-3 form-box">
+                    <label for="email" class="form-label">Email:</label>
+                    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="vhysko@gmail.com " name="email" required>
                   </div>
+
+                  <div class="col-12">
+                    <!--<input type="submit" value="SUBSCRIBE" class="btn btn-primary">-->
+                    <button type="submit" id="subscribe-button" class="btn btn-primary">Subscribe</button>
+                  </div>
+                </form>
+                <div id="success-message" style="display: none;">
+                  <h2>Thank you for joining us!</h2>
+                  <p class="blackP">We're excited to have you as part of our mission to bring clean water to communities across Nigeria. Stay tuned for updates on our progress and ways you can get more involved!</p>
                 </div>
+                <!--<div id="emailHelp" class="form-text-2">
+                  Your information is Private
+                </div>-->                </div>
               </div>
             </div>
             </div>
@@ -610,7 +587,7 @@
         </div>
       </div>
 
-    </footer>
+    </footer><br>
 
 
  
@@ -619,6 +596,19 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const form = document.getElementById('booking-form');
+      const successMessage = document.getElementById('success-message');
+      const subscribeButton = document.getElementById('subscribe-button');
+
+      subscribeButton.addEventListener('click', (event) => {
+          event.preventDefault();
+
+          form.style.display = 'none';
+          successMessage.style.display = 'block';
+          successMessage.style.color = "green";
+      });
+  </script>
   </body>
 </html>
 
