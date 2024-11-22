@@ -29,7 +29,7 @@
   list-style: none;
   scroll-behavior: smooth;
   /* font-family: "roboto", sans-serif; */
-  font-family: "Lato", sans-serif;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .input-container {
@@ -93,6 +93,7 @@
   letter-spacing: 1px;
   border-radius: 3px;
   transition: 0.1s ease-in;
+  font-family: "Titillium Web", sans-serif;
 
   border-bottom: 4px solid transparent;
 }
@@ -139,7 +140,7 @@ nav ul a button:hover {
 
 .btn-secondary {
   background: var(--color-tertiary) !important;
-  border-o: var(--color-tertiary) !important;
+  border: var(--color-tertiary) !important;
 }
 
 .link {
@@ -152,6 +153,7 @@ nav ul a button:hover {
   text-align: center !important;
   align-items: center !important;
   transition: 0.5s ease-out;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .link:hover {
@@ -234,8 +236,9 @@ h2 {
 .home .content h1 {
   color: #76ff7a !important;
   font-size: 53px !important;
-  font-weight: 900;
+  font-weight: 600;
   text-shadow: 0px px 1px #000000;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .home p {
@@ -246,6 +249,7 @@ h2 {
   font-weight: 600;
   padding: 0;
   margin: 0;
+  font-family: "Titillium Web", sans-serif;
 }
 
 @media (max-width: 850px) {
@@ -257,9 +261,11 @@ h2 {
 @media (max-width: 450px) {
   .home .content h1 {
     font-size: 30px !important;
+    font-family: "Titillium Web", sans-serif;
   }
   .home .content p {
     font-size: 15px;
+    font-family: "Titillium Web", sans-serif;
   }
 }
 
@@ -342,6 +348,7 @@ p {
   border-radius: 5px;
   transition: 0.5s;
   text-decoration: none;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .home .content a:hover {
@@ -367,12 +374,15 @@ p {
 @media (max-width: 450px) {
   .home .content h5 {
     font-size: 25px;
+    font-family: "Titillium Web", sans-serif;
   }
   .home .content h1 {
     font-size: 38px;
+    font-family: "Titillium Web", sans-serif;
   }
   .home .content p {
     font-size: 13px;
+    font-family: "Titillium Web", sans-serif;
   }
 }
 
@@ -387,6 +397,7 @@ p {
   text-align: center;
   margin-top: 30px;
   font-weight: 600;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .main-txt h1 span {
@@ -415,6 +426,7 @@ p {
 
 .packages .card .card-body p {
   font-size: 15px;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .checked {
@@ -424,6 +436,7 @@ p {
 .packages .card .card-body h6 {
   font-size: 20px;
   color: var(--color-tertiary3);
+  font-family: "Titillium Web", sans-serif;
 }
 
 .packages .card .card-body {
@@ -433,6 +446,7 @@ p {
   /* background-image: linear-gradient(to right, #3b9dff, #32de84); */
   font-weight: 1200;
   border-radius: 5px;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .card a {
@@ -449,9 +463,9 @@ p {
 }
 
 .form-container {
-  background-color: var(--color-tertiary);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.435)),
-    url("img/faucet-3240211.jpg");
+  background-color: var(--gradient-secondary);
+  /* background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.435)),
+    url("img/faucet-3240211.jpg"); */
   background-size: cover;
   background-position: center;
   display: flex;
@@ -481,6 +495,7 @@ form {
   background-color: var(--color-primary);
   background-clip: padding-box;
   border: 1px solid #ced4da;
+  font-family: "Titillium Web", sans-serif;
 
   border-radius: 0.25rem;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -499,6 +514,7 @@ form {
   text-decoration: none;
   margin-top: 20px;
   margin-bottom: auto;
+  font-family: "Titillium Web", sans-serif;
 }
 
 .btn-register {
@@ -544,10 +560,6 @@ form {
   margin-top: 0 !important;
 }
 
-.form-label {
-  color: #ebfaf2 !important;
-}
-
 /* CARDS */
 
 .cards-wrapper {
@@ -574,6 +586,7 @@ form {
   background-image: var(--gradient-tertairy5);
   border: 100% !important;
   opacity: 1 !important;
+  font-family: "Titillium Web", sans-serif;
 
   border-radius: 100% !important;
   /* margin-left: -30px !important; */
@@ -611,6 +624,8 @@ form {
   align-items: center;
   margin-top: 30px;
   letter-spacing: 1px;
+  font-family: "Titillium Web", sans-serif;
+
   color: var(--color-tertiary4) !important;
 }
 
@@ -759,24 +774,42 @@ form {
   width: 100%;
   background-image: var(--gradient-primary);
   text-align: center;
+  font-family: "Titillium Web", sans-serif;
 }
 
 footer .container {
   align-items: center;
   text-align: center;
-}
+  font-family: "Titillium Web", sans-serif;
 
-#footer h1 {
-  color: var(--color-primary);
-  font-weight: 600;
-  padding-top: 75px;
-  margin-top: 0;
-  text-shadow: var(--color-tertiary2);
+  #footer h1 {
+    /* color: var(--color-secondary) !important; */
+    font-weight: 600;
+    padding-top: 15px;
+    margin-top: 0;
+    text-shadow: var(--color-tertiary2);
+    font-family: "Titillium Web", sans-serif;
+  }
+
+  h1 {
+    color: var(--color-secondary);
+    font-weight: 600;
+  }
+
+  h2 {
+    padding-top: 25px;
+    color: var(--color-secondary);
+  }
+
+  .main-p {
+    color: #ebfaf2c0 !important;
+    font-weight: 600;
+  }
 }
 
 .social-links i {
-  color: var(--color-primary) !important;
-  background: var(--color-tertiary2);
+  background: var(--color-primary) !important;
+  color: var(--color-primary2);
   padding: 10px;
   border-radius: 5px;
   font-size: 20px;
@@ -785,14 +818,27 @@ footer .container {
   cursor: pointer;
   align-items: center;
   text-align: center;
+  /* font-family: "Titillium Web", sans-serif; */
 }
 
 .social-links i:not(:first-child) {
   margin-left: 30px;
 }
 .social-links i:hover {
-  color: #01c660 !important;
-  background: var(--color-primary);
+  background: #01c660 !important;
+  color: var(--color-primary);
+}
+
+.ratings i:hover {
+  color: var(--color-secondary);
+}
+
+.ratings i:active {
+  color: var(--color-secondary2);
+}
+
+.ratings {
+  color: #0d6efd;
 }
 
 .fa-brands {
@@ -800,16 +846,22 @@ footer .container {
 }
 
 footer h6 {
-  color: var(--color-primary);
+  color: var(--color-tertiary3);
   font-size: 10px;
+  font-weight: 600;
+  font-size: 15px;
   text-align: center;
   align-items: center;
+  font-family: "Titillium Web", sans-serif;
 }
 
 footer p {
   margin-bottom: 0;
   font-size: 10px;
   text-align: center;
+  color: var(--color-tertiary3) !important;
+  font-size: 15px;
+  font-weight: 600;
 }
 
 .subscribe .container h2 {
@@ -817,6 +869,8 @@ footer p {
   text-align: center;
   margin-top: 30px;
   letter-spacing: 1px;
+  font-family: "Titillium Web", sans-serif;
+
   color: var(--color-secondary2);
 }
 
@@ -864,4 +918,242 @@ section .accordion {
 
 .accordion-item {
   background-color: var(--color-primary2);
+}
+
+/* PRE-BOOK */
+
+.pre-book {
+  color: var(--color-primary2) !important;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.pre-book:not(:last-child) {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.pre-book-text {
+  margin-bottom: 10px !important;
+  /* margin-top: 10px; */
+}
+
+.book-section {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.book-section button {
+  border: 3px solid var(--color-primary2);
+  font-family: "Titillium Web", sans-serif;
+}
+
+.book-section button:hover {
+  color: var(--color-tertiary3);
+  font-size: 18px;
+  font-weight: 400;
+  border: 3px solid var(--color-tertiary3);
+
+  font-family: "Titillium Web", sans-serif;
+}
+
+.main-book {
+  margin-top: 30px;
+}
+
+.main-book h2 {
+  /* text-align: start; */
+  color: var(--color-tertiary4);
+  text-transform: uppercase;
+}
+
+.pre-book {
+  color: var(--color-primary2) !important;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.pre-book:not(:last-child) {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.pre-book-text {
+  margin-bottom: 10px !important;
+  margin-top: 10px;
+}
+
+.book-section {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 20px;
+}
+
+.book-section button {
+  border: 3px solid var(--color-primary2);
+  font-family: "Titillium Web", sans-serif;
+}
+
+.book-section button:hover {
+  color: var(--color-tertiary3);
+  font-size: 18px;
+  font-weight: 400;
+  border: 3px solid var(--color-tertiary3);
+
+  font-family: "Titillium Web", sans-serif;
+}
+
+.main-book {
+  margin-top: 30px;
+}
+
+.main-book h2 {
+  /* text-align: start; */
+  color: var(--color-tertiary4);
+  text-transform: uppercase;
+}
+
+/* PRE-BOOK */
+
+#pre-book {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 50px;
+}
+
+.payment-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  label {
+    margin-left: 5px;
+    color: #76ff7a;
+    font-weight: 600;
+  }
+}
+
+.payment-options {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+  color: var(--color-primary2);
+
+  @media (max-width: 769px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  a {
+    background-color: var(--color-primary);
+    text-decoration: underline;
+    padding: 5px;
+    border: none;
+    color: var(--color-secondary2) !important;
+  }
+
+  a:hover {
+    color: var(--color-primary) !important;
+  }
+}
+
+#form-text {
+  text-align: center;
+  font-weight: 600;
+  color: #76ff7a;
+}
+
+#form-text-2 {
+  text-align: center;
+  font-weight: 600;
+  color: #76ff7a;
+  margin-bottom: 25px;
+}
+
+#main {
+  margin-top: 50px;
+}
+
+.card-2 {
+  margin-top: 200px;
+  border: none !important;
+  padding: 30px;
+
+  h2 {
+    text-align: start;
+    color: var(--color-secondary2);
+    font-weight: 600;
+  }
+
+  p {
+    color: #0d6efd !important;
+    border-bottom: 5px solid var(--color-secondary2) !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin-top: 100px;
+  }
+
+  footer .container .form-control {
+    margin-left: 0 !important;
+    align-items: center;
+  }
+
+  .form-control::placeholder .form-select {
+    font-size: 15px;
+  }
+}
+
+.main-container {
+  /* background: var(--gradient-tertiary6) !important; */
+  background-size: cover;
+}
+
+.main {
+  background-image: radial-gradient(#0e6ffd, #77ffcbcc);
+}
+
+.card-2 h5 {
+  color: var(--color-secondary2) !important;
+}
+
+h5 .anchor {
+  color: #0d6efd !important;
+  background: none;
+  text-decoration: underline;
+}
+
+.form-label {
+  color: var(--color-secondary2) !important;
+  font-weight: 600;
+}
+.form-text {
+  p {
+    color: var(--color-primary2) !important;
+  }
+}
+
+footer .container .form-control {
+  width: 100%;
+  /* margin-left: 200px; */
+  padding: 10px;
+  border-radius: 15px;
+}
+
+span .carousel-control-prev,
+span.carousel-control-next {
+  background-color: transparent !important;
+  border-color: transparent !important;
+  border-radius: 50% !important;
+  padding: 10px !important;
+}
+
+.form-control .review-box {
+  width: 60%;
+}
+
+.form-control .review-btn {
+  align-items: center;
 }

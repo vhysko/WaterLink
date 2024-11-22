@@ -24,6 +24,11 @@
     />
     <link rel="shortcut icon" type="image/png" href="img/fav-icon.png">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    
+
 
     <!-- font-awesome -->
     <title>WaterLink</title>
@@ -66,6 +71,11 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#footer">Contact</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="review.html">Review</a>
+            </li>
             <!-- </li>
             
 
@@ -169,6 +179,11 @@
         </div>
         
         <!-- <a href="SignUp.html">Order Water Now!</a> -->
+
+        <!-- box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; -->
+
+
+        
 
         
       </div>
@@ -490,13 +505,90 @@
  </div>
 </section>
 
+
+
+
+<!-- SECTION-CONTACT -->
+
+
+
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="main-txt">
+      <h1>Get In Touch With Us</h1>
+    </div>
+
+    <div class="row G-4" style="margin-top: 50px;">
+      <div class="col-md">
+        <h2 class="text-center mb-4">Contact Info</h2>
+        <ul class="list-group list-group-flush lead">
+          <li class="list-group-item">
+            <span class="fw-bold">Main Location:</span> 9, Bajulaye Road, Morroco, Shomolu, Lagos, Nigeria.
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Customer Care Service-1:</span> +234 705 270 5879
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Customer Care Service-2</span> +234 907 877 3197
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Customer Care Service-3</span> +234 909 213 2862
+          </li>
+          <li class="list-group-item">
+            <span class="fw-bold">Company's Email:</span> waterlinksupport@gmail.com
+          </li>
+        </ul>
+      </div>
+
+       <div class="col-md-6 py-3 py-md-0">
+        <div class="container">
+
+        
+        <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.9393270371875!2d3.3731673752188627!3d6.5293475230949145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b8c52c20fe291%3A0xb39799f2dda67910!2sKiakiaprint!5e0!3m2!1sen!2sng!4v1707315103581!5m2!1sen!2sng"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+      </div> 
+    </div>
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- SECTION-CONTACT -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
    
 
      <!-- SECTION SUBSCRIBE -->
 
 
 
-     <section class="subscribe" id="subscribe">
+     <!-- <section class="subscribe" id="subscribe">
 
         <div class="container">
           <div class="main-txt">
@@ -522,29 +614,33 @@
               </div>
       
               <div class="card">
-              <form action="" method="post" class="row g-3" #="signup" id="booking-form">
-                  <div class="mb-3">
-                    <label for="full_name" class="form-label">Full Name:</label>
-                    <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Vhysko Ekanem" required>
-                  </div>
-
-                  <div class="mb-3 form-box">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="vhysko@gmail.com " name="email" required>
-                  </div>
-
-                  <div class="col-12">
-                    <!--<input type="submit" value="SUBSCRIBE" class="btn btn-primary">-->
-                    <button type="submit" id="subscribe-button" class="btn btn-primary">Subscribe</button>
-                  </div>
-                </form>
-                <div id="success-message" style="display: none;">
-                  <h2>Thank you for joining us!</h2>
-                  <p class="blackP">We're excited to have you as part of our mission to bring clean water to communities across Nigeria. Stay tuned for updates on our progress and ways you can get more involved!</p>
+      
+                
+               
+      
+      
+              <form action="newsletter.php" method="post" class="row g-3" #="signup">
+                <div class="mb-3">
+                  <label for="full_name" class="form-label">Full Name:</label>
+                  <input type="text" class="form-control" id="full_name" name="full_name" placeholder="Vhysko Ekanem" required>
                 </div>
-                <!--<div id="emailHelp" class="form-text-2">
-                  Your information is Private
-                </div>-->                </div>
+                
+                <div class="mb-3 form-box">
+                  <label for="email" class="form-label">Email:</label>
+                  <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="vhysko@gmail.com " name="email" required>
+                </div>
+
+                <div class="col-12">
+                  <input type="submit" value="SUBSCRIBE" class="btn btn-primary">
+                </div>
+              </form>
+                  
+                  
+
+                  <div id="emailHelp" class="form-text-2">
+                    Your information is Private
+                  </div>
+                </div>
               </div>
             </div>
             </div>
@@ -553,41 +649,58 @@
   
     
          
-    </section>
+    </section> -->
 
 
     <!-- FOOTER -->
-
     <footer id="footer">
       <div class="container">
 
-        <h1>Contact Us</h1>
+        <h2>JOIN OUR MAILING COMMUNITY</h2>
+        <p class="main-p">Be the first to know about new collections and exclusive offers.</p>
+        <form action="newsletter.php" method="post" class="row g-3" #="signup">
+          <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email " name="email" required>
+
+          <div class="col-12">
+            <input type="submit" value="SUBSCRIBE" class="btn btn-primary">
+          </div>
+        </form>
+       
+
+
+
+        <h1>Get Connected</h1>
         <h6>Get in touch with us on all our social media platform</h6>
+        <!-- <div class="wrapper">
+          <div class="social-links">
+            <i class="fa-solid fa-star"></i> 
+            <i class="fa-solid fa-star"></i>    
+            <i class="fa-solid fa-star"></i>     
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div> -->
+        
         <div class="wrapper">
-
-       
-
-       
-
           <div class="social-links">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
-            <!-- <i class="fa-brands fa-pinterest-p"></i> -->
+          
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-whatsapp"></i>
           </div>
-
         </div>
         
         </div>
         
         <div class="credits">
-          <p>&copy; MACTVIS-INTERNS-PROJECT</p>
+          <p>&copy; MACTAVIS-INTERNS-PROJECT</p>
         </div>
       </div>
 
-    </footer><br>
+    </footer>
+
+
 
 
  
@@ -596,19 +709,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script>
-      const form = document.getElementById('booking-form');
-      const successMessage = document.getElementById('success-message');
-      const subscribeButton = document.getElementById('subscribe-button');
-
-      subscribeButton.addEventListener('click', (event) => {
-          event.preventDefault();
-
-          form.style.display = 'none';
-          successMessage.style.display = 'block';
-          successMessage.style.color = "green";
-      });
-  </script>
   </body>
 </html>
 

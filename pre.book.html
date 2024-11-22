@@ -24,6 +24,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
@@ -31,25 +32,21 @@
 
     <title>Water-Link Book</title>
   </head>
-
-
-  <main class="bg-dark">
-
-    <body>
-      <nav class="navbar navbar-expand-lg" id="navbar">
-        <div class="container">
-          <a class="navbar-brand" href="index.html" id="logo"
+  <body>
+    <nav class="navbar navbar-expand-lg" id="navbar">
+      <div class="container">
+        <a class="navbar-brand" href="index.html" id="logo"
           ><span>WaterLink</span><i class="fa-solid fa-droplet fa-bounce" ></i></span></a
-          >
-          
-          
-          
-          <button
+        >
+
+       
+        
+        <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#mynavbar"
-          >
+        >
           <span class="fa-solid fa-bars"></span>
         </button>
         <div class="collapse navbar-collapse" id="mynavbar">
@@ -58,29 +55,42 @@
               <a class="nav-link active" href="index.html">Home</a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#vendors">Partners</a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" href="book.html">Book</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="index.html">Packages</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Services</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html">About</a>
-            </li>
+              <a class="nav-link" href="#footer">Contact</a>
+              </li>
 
             <li class="nav-item">
               <a class="nav-link" href="review.html">Review</a>
             </li>
-          </ul>
+            <!-- </li>
+            
+
+              
+                <a href="SignUp.html" class="link" >SignUp</a>
+              </li> -->
           
+
+          
+
+            
+          </ul>
+
+          
+
           <form class="d-flex">
-            
-            
+              
+
             <div class="input-container">
               <i class="fa-solid fa-magnifying-glass"></i>
               <input
@@ -91,139 +101,154 @@
               />
             </div>
             <button class="btn btn-primary" type="button">Search</button>
-          </i>
-        </form>
-      </div>
-    </div>
-  </nav>    
-  <main style="color: #000;">
-    <div class="container" style="color: #000">
-      <div class="form-wrapper">
-        <div class="card bg-dark" id="pre-book">
-          <h4 id="form-text">IMMEDIATE BOOK</h4>
+
           
-          <form action="" method="POST">
-            <div class="mb-3 form-box">
-              <label for="name" class="form-label">Name</label>
-              <input type="name" id="formGroupExampleInput" class="form-control" placeholder="Vhysko Ekanem" name="name" required>
-            </div>
-            <div class="mb-3 form-box">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="vhysko@gmail.com" name="email" required>
-            </div>
-            <div class="mb-3 form-box">
-              <label for="phone_number" class="form-label">Phone Number</label>
-              <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="+234 7052 5879" name="phone_number" required>
-            </div>
-            <div class="mb-3 form-box">
-              <label for="name" class="form-label">Address</label>
-              <input type="name" id="formGroupExampleInput" class="form-control" placeholder="216, Kemi-George, Court, Victoria-Island, Lagos, Nigeria" name="name" required>
-            </div>
+            </i>
             
-            <main id="main">
-              
-              
-              <h4 id="form-text-2">PAYMENT OPTIONS</h4>
-              
-              
-              <form>
-                <div class="payment-options">
-                  <div class="payment-option">
-                    <input type="radio" id="payDelivery" name="paymentMethod" value="payDelivery">
-                    <label for="payDelivery">Pay on Delivery</label>
-                  </div>
-                  <div class="payment-option">
-                    <input type="radio" id="payCard" name="paymentMethod" value="payCard">
-                    <label for="payCard">Pay with Card Details</label>
-                  </div>
-                  <div class="payment-option">
-                    <input type="radio" id="payBankTransfer" name="paymentMethod" value="payBankTransfer">
-                    <label for="payBankTransfer">Pay with Bank Transfer</label>
-                  </div>
-                </div>
-              </form>
-              
-              <p><a href="confirmed_book.html" class="btn btn-primary">Submit Booking</a></p>
-            </form>
-          </main>
+          </form>
+
+          
+
+          
+
+          
+         
+
+         
+
         </div>
+      </div>
+    </nav>    
+  
+     
+
+       <main class="bg-dark">
+
+
+         <div class="container">
+           <div class="form-wrapper">
+
+    
+    
+    
+    
+    <div class="card bg-dark" id="pre-book">
+
+      <h4 id="form-text">BOOK IN ADVANCE</h4>
+      
+      <form action="" method="POST">
+        <div class="mb-3 form-box">
+          <label for="date" class="form-label">Date</label>
+          <input type="date" id="formGroupExampleInput" class="form-control" id="date" name="date" required>
+        </div>
+        <div class="mb-3 form-box">
+          <label for="time" class="form-label">Time</label>
+          <input type="time" class="form-control" id="formGroupExampleInput2" id="time" name="time" required>
+        </div>
+        <div class="mb-3 form-box">
+          <label for="phone_number" class="form-label">Phone Number:</label>
+          <input type="tel" class="form-control" id="formGroupExampleInput2" placeholder="+234 7052 5879" name="phone_number" required>
+        </div>
+        <div class="mb-3 form-box">
+          <label for="address" class="form-label">Address:</label>
+          <textarea class="form-control" id="formGroupExampleInput2" placeholder="003 Cresent avenue, texas" name="address" required></textarea>
+        </div>
+
+        <main id="main">
+
+       
+        <h4 id="form-text-2">PAYMENT OPTIONS</h4>
         
+
+        <form>
+          <div class="payment-options">
+              <div class="payment-option">
+                  <input type="radio" id="payDelivery" name="paymentMethod" value="payDelivery">
+                  <label for="payDelivery">Pay on Delivery</label>
+              </div>
+              <div class="payment-option">
+                  <input type="radio" id="payCard" name="paymentMethod" value="payCard">
+                  <label for="payCard">Pay with Card Details</label>
+              </div>
+              <div class="payment-option">
+                  <input type="radio" id="payBankTransfer" name="paymentMethod" value="payBankTransfer">
+                  <label for="payBankTransfer">Pay with Bank Transfer</label>
+              </div>
+          </div>
+      </form>
+        
+        <p><a href="confirmed_book.html" class="btn btn-primary">Submit Booking</a></p>
+      </form>
+    </main>
+    </div>
+      
       </div>
       
     </main>
-    
+
     <footer id="footer">
       <div class="container">
-        
+
         <h2>JOIN OUR MAILING COMMUNITY</h2>
         <p class="main-p">Be the first to know about new collections and exclusive offers.</p>
         <form action="newsletter.php" method="post" class="row g-3" #="signup">
           <input type="email" class="form-control" id="formGroupExampleInput2" placeholder="Email " name="email" required>
-          
+
           <div class="col-12">
             <input type="submit" value="SUBSCRIBE" class="btn btn-primary">
           </div>
         </form>
-        
-        
-        
-        
+       
+
+
+
         <h1>Get Connected</h1>
         <h6>Get in touch with us on all our social media platform</h6>
+        <!-- <div class="wrapper">
+          <div class="social-links">
+            <i class="fa-solid fa-star"></i> 
+            <i class="fa-solid fa-star"></i>    
+            <i class="fa-solid fa-star"></i>     
+            <i class="fa-regular fa-star"></i>
+          </div>
+        </div> -->
+        
         <div class="wrapper">
           <div class="social-links">
             <i class="fa-brands fa-twitter"></i>
             <i class="fa-brands fa-instagram"></i>
-            
+          
             <i class="fa-brands fa-facebook"></i>
             <i class="fa-brands fa-youtube"></i>
             <i class="fa-brands fa-whatsapp"></i>
           </div>
         </div>
         
+        </div>
+        
+        <div class="credits">
+          <p>&copy; MACTAVIS-INTERNS-PROJECT</p>
+        </div>
       </div>
-      
-      <div class="credits">
-        <p>&copy; MACTAVIS-INTERNS-PROJECT</p>
-      </div>
-    </div>
-    
-  </footer>
-</div>
+
+    </footer>
 
 
-
-
-<script
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
   </main>
   </body>
-</main>
 </html>
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-   <!-- <div class="form-container"> -->
-    <!-- <a href="index.html" class="btn-register">Home</a> -->
-
-    <!-- <div class="main-container"> -->
-
-<!--THE FORM-->
-      <!-- <section class="form-container">
+<!-- 
+  
+<section class="form-container">
         <div class="card"></div>
           <div class="container">
             <div class="row">
@@ -257,13 +282,9 @@
         <!--</div>-->
       <!-- </section> -->
 
+        <!-- <div class="form-container"> -->
+    <!-- <a href="index.html" class="btn-register">Home</a> -->
 
-         <!-- <div class="wrapper">
-          <div class="social-links">
-            <i class="fa-solid fa-star"></i> 
-            <i class="fa-solid fa-star"></i>    
-            <i class="fa-solid fa-star"></i>     
-            <i class="fa-regular fa-star"></i>
-          </div>
-        </div> -->
+    <!-- <div class="main-container"> -->
 
+<!--THE FORM-->

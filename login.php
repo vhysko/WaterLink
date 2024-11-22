@@ -1,9 +1,9 @@
 <?php
 // Database connection details (replace with your actual credentials)
-$servername = "mysql6013.site4now.net";
-$username = "db_aad944_waterlk";
-$password = "TheRealEkanem16@";
-$dbname = "waterlk";
+$servername = "servername";
+$username = "username";
+$password = "password";
+$dbname = "database_name";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -48,7 +48,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
 
             echo "Login successful!";
-            header("Location: user.html");
         } else {
             echo "Invalid email or password.";
         }
