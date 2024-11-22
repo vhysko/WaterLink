@@ -1,66 +1,36 @@
 <?php
-//user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres
- Database connection details
-//$servername = "aws-0-eu-central-1.pooler.supabase.com";
-//$username = "postgres.kdrbheygnrkgjnpnkwji";
-//$port + "6543";
-//$password = "hwbA_t959WPe_Ud";
-//$dbname = "postgres";
-//$conn_string = "user=postgres.kdrbheygnrkgjnpnkwji password=[YOUR-PASSWORD] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres";
+// Database connection details
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "database_name";
 
 // Create connection
-//$conn = new mysqli($servername, $username, $port, $password, $dbname);
-//$conn = new mysqli(user=postgres.kdrbheygnrkgjnpnkwji password=[hwbA_t959WPe_Ud] host=aws-0-eu-central-1.pooler.supabase.com port=6543 dbname=postgres);
-//$conn = pg_connect($conn_string);
+$conn = new mysqli($servername, $username, $password, $dbname);
 
 // Check connection
-//if ($conn->connect_error) {
-    //die("Connection failed: " . $conn->connect_error);
-
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
-// Get data from the form
+// Retrieve form data
 $full_name = $_POST['full_name'];
-$phone = $_POST['phone'];
 $email = $_POST['email'];
+$phone_number = $_POST['phone_number'];
 $address = $_POST['address'];
 
-// Supabase connection details (replace with your actual connection string)
-$conn_string = "postgres://postgres:YhwbA_t959WPe_Ud@db.kdrbheygnrkgjnpnkwji.supabase.co:5432/postgres";
+// Prepare SQL statement
+$sql = "INSERT INTO your_table_name (full_name, email, phone_number, address) VALUES (?, ?, ?, ?)";
+$stmt = $conn->prepare($sql);
+$stmt->bind_param("ssss", $full_name, $email, $phone_number, $address);
 
-// Create connection
-$conn = pg_connect($conn_string);
-
-// Check connection
-if (!$conn) {
-    die("Connection failed: " . pg_last_error());
-
-// Insert data into the database
-$sql = "INSERT INTO bookings (full_name, phone, email, address)
-        VALUES ('$full_name', '$phone', '$email', '$address')";
-
-$result = pg_query($conn, $sql);
-
-//if ($conn->query($sql) === TRUE)
-if ($result) {
-    // Send email notification
-    //$to = $email;
-    //$subject = "Booking Confirmation";
-    //$message = "Thank you for your booking, $full_name!\n\nYour booking was successful.";
-    //$headers = "From: goodluckiyem@gmail.com";
-    header("Location: confirmed_book.html");
-
-    //if (mail($to, $subject, $message, $headers)) {
-        //echo "Booking successful! A confirmation email has been sent.";
-        //header("Location: confirmed_book.html");
-    //} else {
-        //echo "Booking successful, but there was an error sending the email.";
-    //}
+// Execute statement
+if ($stmt->execute()) {
+    echo "Booking created successfully";
 } else {
-    echo "Error: " . pg_last_error($conn);
-//$sql . "<br>" . $conn->error;
+    echo "Error: " . $stmt->error;
 }
 
-//$conn->close();
- pg_close($conn);
+$stmt->close();
+$conn->close();
 ?>
